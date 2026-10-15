@@ -71,7 +71,7 @@ cd meu-projeto-playwright
 ```bash
 npm install
 ```
-* ** 4. Instale os navegadores do Playwright:**
+* **4. Instale os navegadores do Playwright:**
 ```bash
 npx playwright install
 ```
