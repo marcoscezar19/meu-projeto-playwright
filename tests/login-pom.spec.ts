@@ -8,7 +8,7 @@ test.describe('Autenticação - LojaQA (POM com Fixture)', () => {
   });
 
   test('Cenário 2 (Caminho Triste): Deve exibir mensagem de erro ao tentar logar com senha incorreta', async ({ loginPage }) => {
-    await loginPage.login('admin@system.com', 'AdminPassword123'); // Ou uma senha incorreta
+    await loginPage.login('admin@system.com', 'AdmimPassword123'); // Ou uma senha incorreta
     await expect(loginPage.errorMessage).toBeVisible();
   });
 
