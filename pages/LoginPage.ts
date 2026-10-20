@@ -7,6 +7,7 @@ export class LoginPage {
   readonly loginBtn: Locator;
   readonly errorMessage: Locator;
   readonly statusMessage: Locator;
+  readonly credentialsBox: Locator;
 
   // Construtor com o private page exigido pelo Requisito 1
   constructor(private page: Page) {
@@ -15,6 +16,7 @@ export class LoginPage {
     this.loginBtn = page.locator('#loginBtn');
     this.errorMessage = page.locator('#errorMessage');
     this.statusMessage = page.locator('#statusMessage');
+    this.credentialsBox = page.locator('.credentials-info');
   }
 
   async goto() {
